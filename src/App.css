@@ -1,38 +1,109 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #000000;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #00796B;
+  color: #FFFFFF;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: xx-large;
+  margin-left: 50px;
+  padding:5px;
+}
+.logo{
+  margin-top: 10px;
+}
+.container-title{
+  display: flex;
+
+}
+.container-tables{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.container-dctable, .container-actable{
+  background-color: #212121;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.container-graph{
+  margin-top: 20px;
+}
+.container-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: medium;
+}
+h1{
+  color: #FFFFFF;
+}
+a:link, a:visited {
+  background-color: #00796B;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right:2px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover, a:active {
+  background-color: #FFA000;
+  border: 3px solid #000000;
+  color: #000000;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+table{
+  width: 100%;
+  justify-content: center;
+  background-color: #009688;
+  border: solid 1px #607D8B;
+  border-radius: 5px;
+}
+th{
+  height: 15px;
+  width: 30px;
+}
+td{
+  height: 30px;
+  background-color: #B2DFDB;
+  border: solid 1px #009688;
+}
+td:hover{
+  background-color: #FFA000;
+  font-size: larger;
+  font-weight: bold;
+}
+@media(max-width: 500px){
+  .logo{
+    margin: 30px 0 0 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .title{
+    margin-left: 20px;
+  }
+  table{
+    width: 100%;
+    height: 80px;
+  }
+  td{
+    height: 20px;
   }
 }
